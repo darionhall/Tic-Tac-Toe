@@ -1,3 +1,22 @@
 body {
-  background-color: blue;
+  font-size: 10px;
+  background-color: ;
+
 }
+#gameboard {
+  width: 32em;
+  height: 32em;
+  margin: 0 auto;
+
+}
+.cell {
+  border: red solid 1px;
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+}
+
+.row {
+
+}
+
