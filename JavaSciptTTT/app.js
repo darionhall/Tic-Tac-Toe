@@ -94,30 +94,6 @@ function isWinner(moves){
     return null;
   }
 
-    // if (moves === ["X", "X", "X", "O", "O", "", "", "", ""]){
-    // console.log("winner" + moves);
-    // }
-    // if (moves === ["O", "O", "", "X", "X", "X", "", "", ""]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["", "", "", "O", "O", "", "X", "X", "X"]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["X", "O", "", "X", "O", "", "X", "", ""]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["O", "X", "", "O", "X", "", "", "X", ""]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["", "O", "X", "", "O", "X", "", "", "X"]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["X", "O", "O", "", "X", "", "", "", "X"]){
-    //   console.log("winner" + moves);
-    // }
-    // if (moves === ["O", "O", "X", "", "X", "", "X", "", ""]){
-    //   console.log("winner" + moves);
-    // }
 
 }
 
