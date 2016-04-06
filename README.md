@@ -3,7 +3,7 @@
 LINKS:
 
 
-[Trello Tic Tac Toe Board](https://trello.com/b/gu5jngTs/tic-tac-toe)
+[Trello Board for Tic Tac Toe Project](https://trello.com/b/gu5jngTs/tic-tac-toe)
 
 [Original Wireframe](https://gomockingbird.com/projects/q7r0d4r/4gXVnC)
 
