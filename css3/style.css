@@ -39,5 +39,10 @@ body {
 .row {
   box-sizing: border-box;
 }
-
+button {
+  font-size:55px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
 

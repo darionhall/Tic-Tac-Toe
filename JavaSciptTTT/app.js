@@ -13,45 +13,52 @@ $(document).ready(function(){ //first step
   //get user name
   //get x or o
 
-  var $gameCells = $('.cell'); // third step
+  var $gameCells = $('.cell'); // declare variable gameCells
   var moves = ["","","","","","","","",""];  //fourth step, create array of moves
   var count = 0;
   var turn = 'X';
-  // var score = {
-  //   'X': 0,
-  //   'O': 0
-  // };
-  // var win = [ "0,1,2", "0,3,6", "0,4,8", "1,4,7", "2,4,6", "2,5,8", "3,4,5", "6,7,8"]
 
-
-
-
-// function greeting() {
-//  var name = prompt("What is your name?");
-//  alert("Welcome to Tic Tac Toe " + name + "!");
-//  }
-
-// greeting();
 //prompt to get user details
+function greeting() {
+ var name = prompt("What is your name?");
+ alert("Welcome to Tic Tac Toe " + name + "!");
+ }
+//call the function greeting
+ greeting();
 
+ //create a function for reseting or starting a new game.
+ $('.reset').on('click', function(){
+     $($gameCells).html("");
+     var moves = ["","","","","","","","",""];
+     var count = 0;
+     var turn = 'X';
+          startGame();
+
+ })
+//call the function for a new game
+ startGame();
 
 //add click event to the board cells
+function startGame(){
 $($gameCells).one('click', function(){
       $(this).html(turn);
       moves[this.id] = turn;
       //this tracks all the moves in an array
 
-    count++; //sixth step
+    count++; //counts the moves on the gameboard
 
+    //this alternates turns between 'X' and 'O'
     turn = (turn == 'X') ? turn = 'O' : turn = 'X';
 
+    //prints moves on console & alerts participants there's a winner
     console.log(moves, count);
     var winner = isWinner(moves);
     if (winner) {
       alert(winner + ' has won the game!');
     }
   });
-
+}
+// checks cells for matches
 function checkMatch(cell1, cell2, cell3) {
   return cell1 == cell2 &&
          cell1 == cell3 &&
@@ -61,7 +68,7 @@ function checkMatch(cell1, cell2, cell3) {
 function isWinner(moves){
   //check for a winner
 
-  // check all the rows for a match
+  // check all the rows & columns for a winner
   if (checkMatch(moves[0], moves[1], moves[2])) {
     return moves[0];
   }
@@ -81,7 +88,7 @@ function isWinner(moves){
     return moves [2];
   }
 
-  // TODO: last 2 columns and diagonals
+  // checks last 2 columns and diagonals for a winner
   else if (checkMatch(moves[0], moves[4], moves[8])){
     return moves [0];
   }
@@ -89,13 +96,14 @@ function isWinner(moves){
     return moves [2];
   }
 
-
+  //returns null if no winning combination is present
   else {
     return null;
   }
 
 
-}
+};
+
 
 });
 
