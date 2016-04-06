@@ -2,13 +2,11 @@
 
 LINKS:
 
-Link to Trello board:
 
-[https://trello.com/b/gu5jngTs/tic-tac-toe]()
+[Trello Tic Tac Toe Board](https://trello.com/b/gu5jngTs/tic-tac-toe)
 
-Link to original wireframe:
+[Original Wireframe](https://gomockingbird.com/projects/q7r0d4r/4gXVnC)
 
-[https://gomockingbird.com/projects/q7r0d4r/4gXVnC]()
 
 Introduction
 
