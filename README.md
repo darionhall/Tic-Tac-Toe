@@ -1,12 +1,10 @@
-          Tic Tac Toe
+                        Tic Tac Toe
 
 Introduction
 
  * Objective
- * Design/Wireframe
- * Installation
- * Configuration
- * Troubleshooting
+ * Design / Wireframe
+ * Installation / Configuration
 
 OBJECTIVE/USER STORIES:
 
@@ -17,7 +15,9 @@ OBJECTIVE/USER STORIES:
 * Each player should try to win in the lowest possible number of moves.
 * However, if the grid is full with no more cell/blocks to fill, the game ends in a draw. Players can choose to start a new game from scratch.
 
+
 DESIGN / WIREFRAME:
+
 
 Link to original wireframe can be found in the either of following links:
 
@@ -25,7 +25,14 @@ Link to original wireframe can be found in the either of following links:
 
 HTML - create a game board using sections and rows in the body element.
 
+CSS - find a background from google that makes the game theme more apparent. Use CSS to form the game board. Lastly, use CSS to position the title, game board and reset button.
+
+
+INSTALLATION / CONFIGURATION:
+
+
+HTML - Create a game board by using sections with three rows, each row contain three cells. Forming a 3 x 3 grid for tic tac toe. Create a button class called "reset" for restarting an existent game or starting a new game. Lastly, link my stylesheet, javascript and jquery to the index.html in the head.
+
 CSS - use box border to section off each piece/cell of the game board. Use float: left attribute to help cells align for a traditional tic tac toe board. Find a background on google images that represents one of my many interest, music.
 
-JavaScript/jQuery -
-
+JavaScript/jQuery - Starting off with a greeting function that prompts a window asking for the player(s) name and saying welcome to Tic Tac Toe. From there I use different functions to: detect when a button is clicked, when a cell is clicked to collect all the moves, determine if a list of moves matches a winning combo, and display the winner to the user.
