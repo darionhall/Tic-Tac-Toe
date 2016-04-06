@@ -1,9 +1,9 @@
 $(document).ready(function(){ //first step
 //1. detect when a button is clicked
-//2. collect all the moves
+//2. collect all the moves (detect when a cell is clicked)
 //3. Determine if a list of moves matches a winning combo
 //4  Display winner to the user
-// detect when a cell is clicked
+
 
 
 // setup game
@@ -104,6 +104,4 @@ function isWinner(moves){
 
 };
 
-
 });
-
